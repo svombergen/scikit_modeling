@@ -78,7 +78,7 @@ subsample = [1]                         #subsample = [0.1, 0.25, 0.5, 1]
 max_depth = [5]                        #max_depth = [1, 3, 5, 10]  
 from sklearn.model_selection import GridSearchCV
 parameters = {'learning_rate':[0.05, 0.1, 0.25, 0.5, 0.75, 1]}
-gcv = GridSearchCV(estimator = gb, param_grid=parameters, n_jobs=4)
+gcv = GridSearchCV(estimator = gb, param_grid=parameters, n_jobs=4, scoring='f1')
 gcv.fit(X,y)
 # Smote
 gcv.cv_results_
