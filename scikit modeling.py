@@ -12,10 +12,10 @@ import matplotlib as plt
 
 # Connection details
 driver= '{ODBC Driver 13 for SQL Server}'
-server = 'eviscdmsrv.database.windows.net'
+server = ''
 port = 1433
-username = 's.vanombergen@vanlanschot.com'
-database = 'evioutflow'
+username = ''
+database = ''
 pwd = getpass.getpass()
 
 cnxn = pyodbc.connect('Driver=' + driver + 
